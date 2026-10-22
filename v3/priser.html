@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Priser – Svopp</title>
+<meta name="description" content="Priser for Svopp: én fast pris per bil, delt likt. Slik regner vi prisen.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FAF8F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141211" media="(prefers-color-scheme: dark)">
+<style>
+:root{--bg:#FAF8F6;--surface:#fff;--text:#1E1A19;--muted:#6E6663;--faint:#A39B97;--line:#ECE7E4;--brand:#D93A3A;--brand-strong:#B02A2F;--brand-soft:#FBE9E9;--ink:#1E1A19;--link:#B02A2F}
+@media (prefers-color-scheme:dark){:root{--bg:#141211;--surface:#1C1918;--text:#F1ECEA;--muted:#A79F9B;--faint:#756D69;--line:#2F2A28;--brand:#FF7A75;--brand-strong:#FF7A75;--brand-soft:#3A1F20;--link:#FF7A75}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.stripe{height:6px;background:repeating-linear-gradient(90deg,#D93A3A 0 16px,#1E1A19 16px 32px)}
+main{max-width:720px;margin:0 auto;padding:22px 20px 24px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.wordmark{font-size:26px;font-weight:800;letter-spacing:-.7px;color:var(--brand);text-decoration:none}
+.top nav a{font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;margin-left:14px}
+.top nav a[aria-current]{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+h1{font-size:34px;line-height:1.1;letter-spacing:-.8px;margin:26px 0 6px}
+.lead{font-size:17px;color:var(--muted);margin:0 0 6px}
+.date{color:var(--muted);font-size:14px;margin:0}
+h2{font-size:19px;letter-spacing:-.2px;margin:30px 0 8px}
+p,ul,ol{margin:8px 0}ul,ol{padding-left:20px}li{margin:5px 0}
+a{color:var(--link)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}
+.meter{background:#1E1A19;color:#F1ECEA;border-radius:18px;padding:18px 18px 16px;margin:18px 0;position:relative;overflow:hidden}
+.meter:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:repeating-linear-gradient(90deg,#D93A3A 0 14px,#1E1A19 14px 28px)}
+.meter .k{font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:#FF8A85}
+.meter .f{font:600 17px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-top:8px}
+.meter small{display:block;color:#B9B0AC;font-size:13px;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:9px 6px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700}
+td b{color:var(--brand-strong)}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-strong);font-size:12.5px;font-weight:700;border-radius:999px;padding:3px 10px}
+.note{font-size:14px;color:var(--muted)}
+.box{background:var(--brand-soft);border-radius:14px;padding:12px 14px;font-size:15px;margin:12px 0}
+.toc{columns:2;font-size:15px;padding-left:20px}
+@media (max-width:520px){.toc{columns:1}h1{font-size:29px}.top nav a{margin-left:10px}}
+.foot{max-width:720px;margin:10px auto 0;padding:18px 20px calc(30px + env(safe-area-inset-bottom));border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);line-height:1.6}
+.foot b{color:var(--text)}
+.foot a{color:var(--muted)}
+.foot .links{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.foot .links a{color:var(--text);font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<main>
+<div class="top"><a class="wordmark" href="./">Svopp</a><nav><a href="priser.html" aria-current="page">Priser</a><a href="salgsvilkar.html">Salgsvilkår</a><a href="personvern.html">Personvern</a></nav></div>
+<h1>Priser</h1>
+<p class="lead">Svopp selger taxiturer med Taxi Deling. Hele bilen har én fast pris for 1–4 personer, og den er avtalt før turen. Er dere flere, deler dere prisen likt.</p>
+<p><span class="tag">Ingen abonnement</span> <span class="tag">Ingen bestillingsgebyr</span> <span class="tag">Totalpris, ingen mva i tillegg</span></p>
+
+<div class="meter">
+  <div class="k">Slik regner vi prisen</div>
+  <div class="f">Bilpris = vanlig taxipris × 0,95<br>avrundet til nærmeste 10 kr</div>
+  <div class="f">Din pris = bilpris ÷ antall som sitter på</div>
+  <small>Vanlig taxipris er snittet av de to midterste av fire taxiselskapers offentlige priser for samme rute og tidspunkt: Oslo Taxi, Norgestaxi, Christiania Taxi og Elvebyen Taxi. Hvert selskap regnes som startpris + pris per km + pris per minutt, men aldri under selskapets minstepris. Svopp er 5 % lavere.</small>
+</div>
+
+<h2>Du ser prisen før du bestiller</h2>
+<p>Appen regner ut prisen for akkurat din tur, ut fra kjørt distanse og tid langs veien og når turen starter. Prisen du ser når du bestiller, er en <b>maks-pris</b>. Mer enn den betaler du aldri. Blir flere med, går prisen ned for alle.</p>
+
+<h2>Eksempel: Jevnaker sentrum → Hønefoss</h2>
+<div class="card">
+<table>
+<thead><tr><th>Når</th><th>Hele bilen</th><th>2 deler</th><th>4 deler</th></tr></thead>
+<tbody>
+<tr><td>Hverdag dag</td><td><b>450 kr</b></td><td>225 kr</td><td>113 kr</td></tr>
+<tr><td>Hverdagskveld</td><td><b>530 kr</b></td><td>265 kr</td><td>133 kr</td></tr>
+<tr><td>Hverdagsnatt</td><td><b>550 kr</b></td><td>275 kr</td><td>138 kr</td></tr>
+<tr><td>Helg</td><td><b>570 kr</b></td><td>285 kr</td><td>143 kr</td></tr>
+<tr><td>Høytid</td><td><b>710 kr</b></td><td>355 kr</td><td>178 kr</td></tr>
+</tbody>
+</table>
+<p class="note">Ca. 12,3 km og 15 minutter. Regnet ut med samme formel som appen. Den eksakte prisen for din tur ser du i appen før du bestiller.</p>
+</div>
+
+<h2>Tidsperioder</h2>
+<ul>
+<li><b>Hverdag dag:</b> mandag–fredag 06–17</li>
+<li><b>Hverdagskveld:</b> mandag–torsdag 17–23</li>
+<li><b>Hverdagsnatt:</b> mandag–torsdag 23–06</li>
+<li><b>Helg:</b> fredag 17 – mandag 06</li>
+<li><b>Høytid:</b> helligdager, og fra kl. 12 på jul-, nyttårs-, påske- og pinseaften</li>
+</ul>
+
+<h2>Hva som er med i prisen</h2>
+<ul>
+<li>Prisen gjelder hele bilen for 1–4 personer.</li>
+<li>Kø og omveier sjåføren velger, koster ikke mer.</li>
+<li><b>Bompenger kommer i tillegg</b>, som hos andre taxiselskaper.</li>
+<li>Vil du kjøre alene, betaler du hele bilprisen.</li>
+</ul>
+
+<h2>Bli med på en tur som allerede er bestilt</h2>
+<p>Blir du hentet av en Svopp-bil som allerede er på vei samme vei, betaler du din del av bilprisen pluss omveien for å hente deg: <b>20,20 kr per km og 8,40 kr per minutt</b> ekstra kjøring. De som allerede sitter på, betaler ikke noe ekstra og får lavere pris. Alle i bilen og sjåføren må godkjenne omveien før du blir hentet.</p>
+
+<h2>Betaling</h2>
+<p>Du betaler med <b>Vipps</b> eller <b>kort</b> (også Apple Pay og Google Pay). Når du bestiller, reserverer vi maks-prisen. Den faktiske prisen trekkes først når turen er ferdig, og resten frigis. Avbestiller du før bilen er fremme, frigis hele beløpet.</p>
+
+<div class="box">Alle priser er totalpriser i norske kroner. Lønning Løsninger er ikke mva-registrert, så det kommer ikke mva i tillegg. Les mer i <a href="salgsvilkar.html">salgsvilkårene</a>.</div>
+
+</main>
+<footer class="foot">
+  <div><b>Svopp</b> · Lønning Løsninger · Org.nr. 938 537 615</div>
+  <div>Graverengvegen 3, 3520 Jevnaker · <a href="tel:+4790267722">902 67 722</a> · <a href="mailto:svopp@proton.me">svopp@proton.me</a></div>
+  <div class="links"><a href="priser.html">Priser</a><a href="salgsvilkar.html">Salgsvilkår</a><a href="personvern.html">Personvern</a></div>
+</footer>
+</body>
+</html>

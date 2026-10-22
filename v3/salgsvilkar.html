@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Salgsvilkår – Svopp</title>
+<meta name="description" content="Salgsvilkår for taxiturer bestilt med Svopp.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FAF8F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141211" media="(prefers-color-scheme: dark)">
+<style>
+:root{--bg:#FAF8F6;--surface:#fff;--text:#1E1A19;--muted:#6E6663;--faint:#A39B97;--line:#ECE7E4;--brand:#D93A3A;--brand-strong:#B02A2F;--brand-soft:#FBE9E9;--ink:#1E1A19;--link:#B02A2F}
+@media (prefers-color-scheme:dark){:root{--bg:#141211;--surface:#1C1918;--text:#F1ECEA;--muted:#A79F9B;--faint:#756D69;--line:#2F2A28;--brand:#FF7A75;--brand-strong:#FF7A75;--brand-soft:#3A1F20;--link:#FF7A75}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.stripe{height:6px;background:repeating-linear-gradient(90deg,#D93A3A 0 16px,#1E1A19 16px 32px)}
+main{max-width:720px;margin:0 auto;padding:22px 20px 24px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.wordmark{font-size:26px;font-weight:800;letter-spacing:-.7px;color:var(--brand);text-decoration:none}
+.top nav a{font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;margin-left:14px}
+.top nav a[aria-current]{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+h1{font-size:34px;line-height:1.1;letter-spacing:-.8px;margin:26px 0 6px}
+.lead{font-size:17px;color:var(--muted);margin:0 0 6px}
+.date{color:var(--muted);font-size:14px;margin:0}
+h2{font-size:19px;letter-spacing:-.2px;margin:30px 0 8px}
+p,ul,ol{margin:8px 0}ul,ol{padding-left:20px}li{margin:5px 0}
+a{color:var(--link)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}
+.meter{background:#1E1A19;color:#F1ECEA;border-radius:18px;padding:18px 18px 16px;margin:18px 0;position:relative;overflow:hidden}
+.meter:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:repeating-linear-gradient(90deg,#D93A3A 0 14px,#1E1A19 14px 28px)}
+.meter .k{font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:#FF8A85}
+.meter .f{font:600 17px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin-top:8px}
+.meter small{display:block;color:#B9B0AC;font-size:13px;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:9px 6px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700}
+td b{color:var(--brand-strong)}
+.tag{display:inline-block;background:var(--brand-soft);color:var(--brand-strong);font-size:12.5px;font-weight:700;border-radius:999px;padding:3px 10px}
+.note{font-size:14px;color:var(--muted)}
+.box{background:var(--brand-soft);border-radius:14px;padding:12px 14px;font-size:15px;margin:12px 0}
+.toc{columns:2;font-size:15px;padding-left:20px}
+@media (max-width:520px){.toc{columns:1}h1{font-size:29px}.top nav a{margin-left:10px}}
+.foot{max-width:720px;margin:10px auto 0;padding:18px 20px calc(30px + env(safe-area-inset-bottom));border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);line-height:1.6}
+.foot b{color:var(--text)}
+.foot a{color:var(--muted)}
+.foot .links{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.foot .links a{color:var(--text);font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<main>
+<div class="top"><a class="wordmark" href="./">Svopp</a><nav><a href="priser.html">Priser</a><a href="salgsvilkar.html" aria-current="page">Salgsvilkår</a><a href="personvern.html">Personvern</a></nav></div>
+<h1>Salgsvilkår</h1>
+<p class="date">Gjelder fra 22.10.2026</p>
+<p class="lead">Vilkårene gjelder når du som forbruker bestiller og betaler for en taxitur med Svopp i appen eller på nettsiden.</p>
+<ol class="toc">
+<li><a href="#partene">Partene</a></li><li><a href="#tjenesten">Hva du kjøper</a></li><li><a href="#pris">Pris</a></li><li><a href="#avtale">Når avtalen er inngått</a></li><li><a href="#betaling">Betaling</a></li><li><a href="#turen">Gjennomføring av turen</a></li><li><a href="#deling">Deling og omvei</a></li><li><a href="#avbestilling">Avbestilling</a></li><li><a href="#angrerett">Angrerett</a></li><li><a href="#reklamasjon">Feil og mangler</a></li><li><a href="#personopplysninger">Personopplysninger</a></li><li><a href="#konflikt">Klager og konfliktløsning</a></li><li><a href="#endringer">Endringer</a></li>
+</ol>
+
+<h2 id="partene">1. Partene</h2>
+<p>Selger er <b>Lønning Løsninger</b> (enkeltpersonforetak), org.nr. 938 537 615, Graverengvegen 3, 3520 Jevnaker. E-post <a href="mailto:svopp@proton.me">svopp@proton.me</a>, telefon <a href="tel:+4790267722">902 67 722</a>. Svopp er et varemerke som drives av Lønning Løsninger. Kjøper er deg som bestiller turen.</p>
+
+<h2 id="tjenesten">2. Hva du kjøper</h2>
+<p>Du kjøper en taxitur med <b>Taxi Deling</b> fra hentested til reisemål, på tidspunktet du velger. Bilen tar 1–4 passasjerer. Du kan velge å dele bilen med andre som skal samme vei, eller kjøre alene. Turen utføres av en sjåfør med gyldig kjøreseddel i en bil med drosjeløyve.</p>
+
+<h2 id="pris">3. Pris</h2>
+<p>Hele bilen har én fast pris, og dere som sitter på deler den likt. Prisen regnes ut før du bestiller, og hvordan den regnes ut, står på <a href="priser.html">prissiden</a>. Prisen du ser når du bestiller, er en maks-pris. Mer enn den betaler du ikke. Blir flere med, går prisen ned.</p>
+<p>Alle priser er totalpriser i norske kroner. Lønning Løsninger er ikke mva-registrert, så det kommer ikke mva i tillegg. Det eneste som kommer i tillegg, er bompenger på ruten. Det er ingen bestillingsgebyr og ingen abonnement.</p>
+
+<h2 id="avtale">4. Når avtalen er inngått</h2>
+<p>Avtalen er bindende når du har trykket «Bestill» eller «Hiv deg på» og betalingen er reservert. Du får bekreftelse på bestillingen i appen. Hvis vi ikke finner ledig bil, får du beskjed, og reservasjonen frigis.</p>
+
+<h2 id="betaling">5. Betaling</h2>
+<p>Du kan betale med <b>Vipps</b> eller <b>kort</b> (Visa, Mastercard, Apple Pay og Google Pay). Kortbetalinger går gjennom Stripe, og Vipps-betalinger gjennom Vipps MobilePay. Vi ser aldri hele kortnummeret ditt.</p>
+<p>Når du bestiller, reserverer vi maks-prisen. Beløpet trekkes først når turen er ferdig, og bare det turen faktisk kostet. Resten frigis. Hvor lang tid det tar før en frigitt reservasjon forsvinner fra kontoen din, avhenger av banken din. Du får kvittering for turen.</p>
+
+<h2 id="turen">6. Gjennomføring av turen</h2>
+<p>Du ser i appen når bilen kommer og hvor den er. Vær klar på hentestedet til avtalt tid. Sjåføren kjører den ruten som passer best for turen. Kø og omveier sjåføren velger, gjør ikke prisen høyere.</p>
+<p>Vi kan avvise eller avbryte en tur hvis en passasjer er til fare for sjåføren eller andre, eller ved grov oppførsel. Du betaler da bare for den delen av turen som er kjørt.</p>
+
+<h2 id="deling">7. Deling og omvei</h2>
+<p>Velger du å dele, kan andre som skal samme vei, bli med. Prisen deles likt på dem som sitter på. Vil noen bli med på en tur som allerede er i gang, betaler den nye passasjeren sin del pluss omveien for å hente seg (20,20 kr per km og 8,40 kr per minutt ekstra kjøring). De som allerede sitter på, betaler ikke noe ekstra. Alle i bilen og sjåføren må godkjenne omveien først.</p>
+
+<h2 id="avbestilling">8. Avbestilling</h2>
+<p>Du kan avbestille gratis i appen helt til bilen er fremme på hentestedet. Hele den reserverte summen frigis da. Er bilen allerede fremme, kontakter du sjåføren eller oss på <a href="tel:+4790267722">902 67 722</a>.</p>
+<p>Vi tar i dag ikke gebyr for avbestilling eller for å ikke møte opp. Innfører vi det, står det her og i appen før det gjelder.</p>
+<p>Må vi avlyse turen, for eksempel fordi bilen får motorstopp, gir vi deg beskjed så raskt som mulig, og du betaler ingenting for turen.</p>
+
+<h2 id="angrerett">9. Angrerett</h2>
+<p>Det er <b>ikke angrerett</b> på taxiturer. Angrerettloven gjelder ikke for avtaler om persontransporttjenester (angrerettloven § 2 bokstav e). Du kan likevel avbestille gratis frem til bilen er fremme, se punkt 8.</p>
+
+<h2 id="reklamasjon">10. Feil og mangler (reklamasjon)</h2>
+<p>Er det noe galt med turen, for eksempel feil pris, at bilen ikke kom, eller at turen ikke ble gjennomført som avtalt, kan du klage i appen under «Noe galt med turen?» eller på <a href="mailto:svopp@proton.me">svopp@proton.me</a>. Gi beskjed så snart som mulig etter at du oppdaget feilen. Har du betalt for mye eller for noe du ikke fikk, betaler vi tilbake til samme betalingsmåte.</p>
+<p>Har du glemt noe i bilen, ta kontakt, så hjelper vi deg å få det tilbake.</p>
+
+<h2 id="personopplysninger">11. Personopplysninger</h2>
+<p>Hvordan vi behandler personopplysninger, står i <a href="personvern.html">personvernerklæringen</a>.</p>
+
+<h2 id="konflikt">12. Klager og konfliktløsning</h2>
+<p>Klager sendes til <a href="mailto:svopp@proton.me">svopp@proton.me</a> eller på telefon <a href="tel:+4790267722">902 67 722</a>. Vi svarer så raskt vi kan og prøver å finne en løsning sammen med deg.</p>
+<p>Blir vi ikke enige, kan du kontakte <a href="https://www.forbrukertilsynet.no" rel="noopener">Forbrukertilsynet</a> for mekling. Fører ikke meklingen frem, kan saken bringes inn for <a href="https://www.forbrukerklageutvalget.no" rel="noopener">Forbrukerklageutvalget</a>.</p>
+
+<h2 id="endringer">13. Endringer</h2>
+<p>Endrer vi salgsvilkårene, oppdaterer vi denne siden og datoen øverst. Endringene gjelder ikke turer du allerede har bestilt.</p>
+
+</main>
+<footer class="foot">
+  <div><b>Svopp</b> · Lønning Løsninger · Org.nr. 938 537 615</div>
+  <div>Graverengvegen 3, 3520 Jevnaker · <a href="tel:+4790267722">902 67 722</a> · <a href="mailto:svopp@proton.me">svopp@proton.me</a></div>
+  <div class="links"><a href="priser.html">Priser</a><a href="salgsvilkar.html">Salgsvilkår</a><a href="personvern.html">Personvern</a></div>
+</footer>
+</body>
+</html>
